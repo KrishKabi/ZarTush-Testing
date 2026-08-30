@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Data Analytics & Engineering Portfolio</title>
+  <style>
+    /* Global styles inspired by Acquisition.com clean minimalism */
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background-color: #ffffff;
+      color: #111111;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+    }
+    
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 60px 20px;
+    }
+
+    /* Top Hero Header Elements */
+    .hero-section {
+      text-align: center;
+      padding-bottom: 40px;
+      border-bottom: 2px solid #f0f0f0;
+      margin-bottom: 50px;
+    }
+
+    h1 {
+      font-size: 2.8rem;
+      font-weight: 900;
+      letter-spacing: -0.04em;
+      line-height: 1.15;
+      margin: 0 0 15px 0;
+    }
+
+    .subtitle {
+      font-size: 1.3rem;
+      font-weight: 500;
+      color: #555555;
+      margin-bottom: 25px;
+    }
+
+    .executive-summary {
+      background: #f9f9f9;
+      border-left: 5px solid #000000;
+      padding: 20px;
+      text-align: left;
+      font-size: 1.1rem;
+      color: #333333;
+      border-radius: 4px;
+    }
+
+    .note {
+      font-size: 0.85rem;
+      color: #666666;
+      font-style: italic;
+      margin-top: 15px;
+    }
+
+    /* Project Cards & Grid Layouts */
+    .project-card {
+      margin-bottom: 60px;
+      padding-bottom: 40px;
+      border-bottom: 1px solid #eeeeee;
+    }
+
+    .project-title a {
+      font-size: 1.8rem;
+      font-weight: 800;
+      color: #000000;
+      text-decoration: none;
+      letter-spacing: -0.02em;
+    }
+
+    .project-title a:hover {
+      text-decoration: underline;
+    }
+
+    .client-profile {
+      font-size: 1rem;
+      color: #666666;
+      margin-top: 5px;
+      margin-bottom: 20px;
+    }
+
+    /* Media Grid: Puts testimonial and showcase side by side like Hormozi's columns */
+    .media-grid {
+      display: flex;
+      gap: 20px;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin: 25px 0;
+    }
+
+    .media-grid img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 6px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    }
+
+    /* Interactive Dropdowns styled cleanly */
+    details {
+      background: #ffffff;
+      border: 1px solid #e0e0e0;
+      border-radius: 6px;
+      margin-bottom: 12px;
+      padding: 15px;
+      transition: all 0.2s ease;
+    }
+
+    details[open] {
+      background: #fafafa;
+      box-shadow: inset 0 2px 4px rgba(0,0,0,0.02);
+    }
+
+    summary {
+      font-weight: 700;
+      font-size: 1.05rem;
+      cursor: pointer;
+      outline: none;
+      user-select: none;
+    }
+
+    ul {
+      margin: 15px 0 0 0;
+      padding-left: 20px;
+    }
+
+    li {
+      margin-bottom: 10px;
+      color: #222222;
+    }
+
+    .confidential-tag {
+      background: #fff5f5;
+      color: #cc0000;
+      border: 1px dashed #cc0000;
+      padding: 15px;
+      text-align: center;
+      border-radius: 6px;
+      font-weight: 700;
+      margin: 20px 0;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    
+    <!-- HERO HEADER SECTION -->
+    <div class="hero-section">
+      <h1>Data Analytics & Engineering Portfolio</h1>
+      <div class="subtitle">Automated ETL Pipelines | Business Intelligence | Enterprise Data Modeling</div>
+      
+      <div class="executive-summary">
+        <strong>Executive Summary:</strong> I engineer automated data architecture and robust ETL pipelines that convert fragmented, multi-channel operational data into high-density executive dashboards. Expert in data transformation logic, semantic modeling, and reducing reporting latency.
+      </div>
+      <div class="note">
+        *<strong>Confidentiality Note:</strong> To comply with Non-Disclosure Agreements (NDAs), all sensitive metrics, proprietary business logic, and identifying customer details have been anonymized or modified.
+      </div>
+    </div>
+
+    <!-- PROJECT 1 -->
+    <div class="project-card">
+      <div class="project-title">
+        <a href="https://github.com/KrishKabi/ZarTush-Data-Consulting-Pvt-Ltd/blob/main/Ecommerce_Dashboard" target="_blank">🛍️ Project 1: Multi-Channel E-Commerce Data Pipeline & Financial Dashboard</a>
+      </div>
+      <div class="client-profile"><strong>Client Profile:</strong> High-Volume E-Commerce Retailer (TikTok Shop & Shopee)</div>
+      
+      <p><strong>Core Impact:</strong> Engineered a unified data ingestion pipeline that aggregates fragmented multi-platform order and income streams, eliminating manual reporting overhead.</p>
+
+      <div class="media-grid">
+        <img src="Ecommerce_Dashboard/Ecommerce_Dashboard.png" style="width: 100%; max-width: 750px;" alt="Ecommerce Dashboard">
+      </div>
+
+      <details>
+        <summary>Business Value & Outcomes (Click to expand)</summary>
+        <ul>
+          <li><b>Decoupled File Ingestion:</b> Designed a seamless architecture allowing non-technical operators to feed raw platform export of orders and income reports into a centralized system without breaking schema integrity</li>
+          <li><b>Unified Financial Modeling:</b> Automated the structural transformation of conflicting data schemas (TikTok vs. Shopee) into a standardized star-schema database model</li>
+          <li><b>Operational Velocity:</b> Replaced a 6-hour weekly manual consolidation process with an automated view of net margins, settled order volumes, and disbursement %</li>
+        </ul>
+      </details>
+
+      <details>
+        <summary>Technical Stack & Competencies (Click to expand)</summary>
+        <ul>
+          <li><b>Data Engineering:</b> ETL Pipeline Design, Cross-Platform Schema Standardization, Star-Schema Data Modeling</li>
+          <li><b>Business Intelligence:</b> Advanced DAX, Power Query M-Engine, Operational KPI Dashboards</li>
+        </ul>
+      </details>
+    </div>
+
+    <!-- PROJECT 2 -->
+    <div class="project-card">
+      <div class="project-title">
+        <a href="https://github.com/KrishKabi/ZarTush-Data-Consulting-Pvt-Ltd/tree/main/Email_Marketing_Campaign_Dashboard" target="_blank">📧 Project 2: Marketing Analytics Pipeline & Performance Dashboard</a>
+      </div>
+      <div class="client-profile"><strong>Client Profile:</strong> B2B Marketing Firm</div>
+      
+      <p><strong>Core Impact:</strong> Structured a marketing dataset into a clean performance engine, decreasing executive reporting latency by 50%.</p>
+
+      <div class="media-grid">
+        <img src="Testimonials/Raushida.png" style="width: 250px;" alt="Raushida Testimonial">
+        <img src="Email_Marketing_Campaign_Dashboard/email_marketing_dashboard.png" style="width: 450px;" alt="Email Marketing Dashboard">
+      </div>
+
+      <details>
+        <summary>Business Value & Outcomes (Click to expand)</summary>
+        <ul>
+          <li><b>Process Optimization:</b> Eliminated weekly manual reporting cycles by engineering an automated KPI calculation framework</li>
+          <li><b>Revenue Leakage Isolation:</b> Identified a critical 28.65% campaign delivery failure rate, instantly surfacing optimization targets to maximize client acquisition ROI</li>
+        </ul>
+      </details>
+
+      <details>
+        <summary>Technical Stack & Competencies (Click to expand)</summary>
+        <ul>
+          <li><b>Analytics & Visualization:</b> High-Density Executive Dashboards, Cohort Analysis, Performance Bottleneck Identification</li>
+        </ul>
+      </details>
+    </div>
+
+    <!-- PROJECT 3 -->
+    <div class="project-card">
+      <div class="project-title">⚙️ Project 3: Enterprise Training Operations Pipeline & Automated Refresh Architecture</div>
+      <div class="client-profile"><strong>Client Profile:</strong> Energy Industry Training Consultant</div>
+      
+      <p><strong>Core Impact:</strong> Built an automated cloud-linked operational tracker connected to enterprise storage, reducing data latency to zero manual intervention.</p>
+
+      <div class="media-grid">
+        <img src="Testimonials/Richard.png" style="width: 320px;" alt="Richard Testimonial">
+      </div>
+
+      <div class="confidential-tag">
+        🔒 Dashboard Highly Confidential — Not Available for External Viewing
+      </div>
+
+      <details>
+        <summary>Business Value & Outcomes (Click to expand)</summary>
+        <ul>
+          <li><b>Cloud Infrastructure Sync:</b> Architected a live data pipeline tethered directly to the client's cloud repository (SharePoint Document Library) to capture multi-department updates</li>
+          <li><b>Automated Refresh Architecture:</b> Implemented automated data orchestration via scheduled daily gateway refreshes on cloud services, ensuring leadership always accesses real-time operational metrics</li>
+          <li><b>Data Integrity:</b> Engineered robust transformation logic to automatically clean, deduplicate, and validate incoming regional training logs before visual rendering</li>
+        </ul>
+      </details>
+
+      <details>
+        <summary>Technical Stack & Competencies (Click to expand)</summary>
+        <ul>
+          <li><b>Data Architecture:</b> Cloud Integration, Scheduled Gateway Orchestration, Automated Data Cleansing</li>
+          <li><b>Business Intelligence:</b> Enterprise Asset Tracking, Role-Based Operational Metrics</li>
+        </ul>
+      </details>
+    </div>
+
+  </div>
+
+</body>
+</html>
