@@ -492,6 +492,134 @@
 
 </div>
 
+<!-- TESTIMONIALS — FUN COLLAGE -->
+<section class="testimonials-section">
+  <h2 class="testimonials-heading">What people are saying:</h2>
+
+  <div class="testimonial-collage">
+
+    <div class="testimonial-card testimonial-1">
+      <img src="Testimonials/Bill Forish.png" alt="Client testimonial">
+    </div>
+
+    <div class="testimonial-card testimonial-2">
+      <img src="Testimonials/Jay Nash.png" alt="Client testimonial">
+    </div>
+
+    <!-- Add additional testimonials here -->
+    
+    <div class="testimonial-card testimonial-3">
+      <img src="Testimonials/Arsh Gupta.png" alt="Client testimonial">
+    </div>
+
+    <div class="testimonial-card testimonial-4">
+      <img src="Testimonials/Ali Rizvi.png" alt="Client testimonial">
+    </div>
+
+    <div class="testimonial-card testimonial-5">
+      <img src="Testimonials/Zoey Khoo.png" alt="Client testimonial">
+    </div>
+    
+
+  </div>
+</section>
+
+<style>
+  .testimonials-section {
+    margin-top: 20px;
+    padding-top: 20px;
+  }
+
+  .testimonials-heading {
+    margin: 0 0 35px 0;
+    color: #003366;
+    font-size: 2rem;
+    font-weight: 800;
+    text-align: center;
+    letter-spacing: -0.02em;
+  }
+
+  .testimonial-collage {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 35px;
+    padding: 20px 10px 40px;
+  }
+
+  .testimonial-card {
+    padding: 10px;
+    background: #ffffff;
+    border: 1px solid #eeeeee;
+    border-radius: 8px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.10);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+  }
+
+  .testimonial-card img {
+    display: block;
+    width: auto;
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+  }
+
+  .testimonial-card:hover {
+    transform: translateY(-8px) rotate(0deg) !important;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+  }
+
+  .testimonial-1 {
+    transform: rotate(-3deg);
+  }
+
+  .testimonial-2 {
+    transform: rotate(3deg);
+  }
+
+  .testimonial-3 { transform: rotate(-2deg); }
+  .testimonial-4 { transform: rotate(4deg); }
+  .testimonial-5 { transform: rotate(-4deg); }
+
+  .testimonial-1 img {
+    max-width: 400px;
+  }
+
+  .testimonial-2 img {
+    max-width: 400px;
+  }
+
+  .testimonial-3 img {
+    max-width: 400px;
+  }
+
+  .testimonial-4 img {
+    max-width: 400px;
+  }
+
+  .testimonial-5 img {
+    max-width: 400px;
+  }
+
+  @media (max-width: 768px) {
+    .testimonial-collage {
+      gap: 25px;
+    }
+
+    .testimonial-card {
+      transform: rotate(0deg);
+      width: 100%;
+      max-width: 500px;
+    }
+
+    .testimonial-card img {
+      width: 100%;
+      max-width: none;
+    }
+  }
+</style>
+    
   </div>
 
 </body>
