@@ -99,17 +99,6 @@
       .subtitle { font-size: 28px; }
     }
 
-    .executive-summary {
-      background: #f9f9f9;
-      border-left: 5px solid #000000;
-      padding: 20px;
-      text-align: left;
-      font-size: 1.1rem;
-      color: #333333;
-      border-radius: 4px;
-      font-weight: 400 !important;
-    }
-
     .note {
       font-size: 0.85rem;
       color: #666666;
@@ -132,7 +121,7 @@
     .project-title a {
       font-family: 'Poppins', -apple-system, BlinkMacSystemFont, sans-serif;
       font-size: 1.8rem;
-      font-weight: 800;
+      font-weight: 400;
       color: #000000;
       text-decoration: none;
       letter-spacing: -0.02em;
@@ -183,11 +172,15 @@
     }
 
     summary {
-      font-weight: 800; 
+      font-weight: 400;
       font-size: 1.05rem;
       cursor: pointer;
       outline: none;
       user-select: none;
+    }
+
+    summary::first-line {
+      font-weight: 800;
     }
 
     ul {
@@ -202,7 +195,11 @@
     }
 
     /* Target specific formatting hooks */
-    strong, b {
+    .bold-label {
+      font-weight: 800 !important;
+    }
+
+    .bullet-title {
       font-weight: 800 !important;
     }
 
@@ -230,11 +227,8 @@
         <h1>ARE MANUAL SPREADSHEETS KEEPING YOU FROM SCALING YOUR BUSINESS?</h1>
         <div class="subtitle">I automate your data pipeline into a simple dashboard so you can focus on the metrics that grow your business.</div>
         
-        <div class="executive-summary">
-          <strong>Executive Summary:</strong> I engineer automated data architecture and robust ETL pipelines that convert fragmented, multi-channel operational data into high-density executive dashboards. Expert in data transformation logic, semantic modeling, and reducing reporting latency.
-        </div>
         <div class="note">
-          <strong>Confidentiality Note:</strong> To comply with Non-Disclosure Agreements (NDAs), all sensitive metrics, proprietary business logic, and identifying customer details have been anonymized or modified. The data structures and engineering architecture remain identical to the production environment.
+          <span class="bold-label">Confidentiality Note:</span> To comply with Non-Disclosure Agreements (NDAs), all sensitive metrics, proprietary business logic, and identifying customer details have been anonymized or modified. The data structures and engineering architecture remain identical to the production environment.
         </div>
       </div>
 
@@ -250,28 +244,28 @@
       <div class="project-title">
         <a href="https://github.com" target="_blank">🛍️ Project 1: Multi-Channel E-Commerce Data Pipeline & Financial Dashboard</a>
       </div>
-      <div class="client-profile"><strong>Client Profile:</strong> High-Volume E-Commerce Retailer (TikTok Shop & Shopee)</div>
+      <div class="client-profile"><span class="bold-label">Client Profile:</span> High-Volume E-Commerce Retailer (TikTok Shop & Shopee)</div>
       
-      <p><strong>Core Impact:</strong> Engineered a unified data ingestion pipeline that aggregates fragmented multi-platform order and income streams, eliminating manual reporting overhead.</p>
+      <p><span class="bold-label">Core Impact:</span> Engineered a unified data ingestion pipeline that aggregates fragmented multi-platform order and income streams, eliminating manual reporting overhead.</p>
 
       <div class="media-grid">
         <img src="Ecommerce_Dashboard/Ecommerce_Dashboard.png" style="width: 100%; max-width: 750px;" alt="Ecommerce Dashboard">
       </div>
 
       <details>
-        <summary>Business Value & Outcomes (Click to expand)</summary>
+        <summary><span class="bold-label">Business Value & Outcomes</span> (Click to expand)</summary>
         <ul>
-          <li><b>Decoupled File Ingestion:</b> Designed a seamless architecture allowing non-technical operators to feed raw platform export of orders and income reports into a centralized system without breaking schema integrity</li>
-          <li><b>Unified Financial Modeling:</b> Automated the structural transformation of conflicting data schemas (TikTok vs. Shopee) into a standardized star-schema database model</li>
-          <li><b>Operational Velocity:</b> Replaced a 6-hour weekly manual consolidation process with an automated view of net margins, settled order volumes, and disbursement %</li>
+          <li><span class="bullet-title">Decoupled File Ingestion:</span> Designed a seamless architecture allowing non-technical operators to feed raw platform export of orders and income reports into a centralized system without breaking schema integrity</li>
+          <li><span class="bullet-title">Unified Financial Modeling:</span> Automated the structural transformation of conflicting data schemas (TikTok vs. Shopee) into a standardized star-schema database model</li>
+          <li><span class="bullet-title">Operational Velocity:</span> Replaced a 6-hour weekly manual consolidation process with an automated view of net margins, settled order volumes, and disbursement %</li>
         </ul>
       </details>
 
       <details>
-        <summary>Technical Stack & Competencies (Click to expand)</summary>
+        <summary><span class="bold-label">Technical Stack & Competencies</span> (Click to expand)</summary>
         <ul>
-          <li><b>Data Engineering:</b> ETL Pipeline Design, Cross-Platform Schema Standardization, Star-Schema Data Modeling</li>
-          <li><b>Business Intelligence:</b> Advanced DAX, Power Query M-Engine, Operational KPI Dashboards</li>
+          <li><span class="bullet-title">Data Engineering:</span> ETL Pipeline Design, Cross-Platform Schema Standardization, Star-Schema Data Modeling</li>
+          <li><span class="bullet-title">Business Intelligence:</span> Advanced DAX, Power Query M-Engine, Operational KPI Dashboards</li>
         </ul>
       </details>
     </div>
@@ -281,9 +275,9 @@
       <div class="project-title">
         <a href="https://github.com" target="_blank">📧 Project 2: Marketing Analytics Pipeline & Performance Dashboard</a>
       </div>
-      <div class="client-profile"><strong>Client Profile:</strong> B2B Marketing Firm</div>
+      <div class="client-profile"><span class="bold-label">Client Profile:</span> B2B Marketing Firm</div>
       
-      <p><strong>Core Impact:</strong> Structured a marketing dataset into a clean performance engine, decreasing executive reporting latency by 50%.</p>
+      <p><span class="bold-label">Core Impact:</span> Structured a marketing dataset into a clean performance engine, decreasing executive reporting latency by 50%.</p>
 
       <div class="media-grid">
         <img src="Testimonials/Raushida.png" style="width: 250px;" alt="Raushida Testimonial">
@@ -291,17 +285,17 @@
       </div>
 
       <details>
-        <summary>Business Value & Outcomes (Click to expand)</summary>
+        <summary><span class="bold-label">Business Value & Outcomes</span> (Click to expand)</summary>
         <ul>
-          <li><b>Process Optimization:</b> Eliminated weekly manual reporting cycles by engineering an automated KPI calculation framework</li>
-          <li><b>Revenue Leakage Isolation:</b> Identified a critical 28.65% campaign delivery failure rate, instantly surfacing optimization targets to maximize client acquisition ROI</li>
+          <li><span class="bullet-title">Process Optimization:</span> Eliminated weekly manual reporting cycles by engineering an automated KPI calculation framework</li>
+          <li><span class="bullet-title">Revenue Leakage Isolation:</span> Identified a critical 28.65% campaign delivery failure rate, instantly surfacing optimization targets to maximize client acquisition ROI</li>
         </ul>
       </details>
 
       <details>
-        <summary>Technical Stack & Competencies (Click to expand)</summary>
+        <summary><span class="bold-label">Technical Stack & Competencies</span> (Click to expand)</summary>
         <ul>
-          <li><b>Analytics & Visualization:</b> High-Density Executive Dashboards, Cohort Analysis, Performance Bottleneck Identification</li>
+          <li><span class="bullet-title">Analytics & Visualization:</span> High-Density Executive Dashboards, Cohort Analysis, Performance Bottleneck Identification</li>
         </ul>
       </details>
     </div>
@@ -311,9 +305,9 @@
       <div class="project-title">
         <a href="https://github.com" target="_blank">⚙️ Project 3: Enterprise Training Operations Pipeline & Automated Refresh Architecture</a>
       </div>
-      <div class="client-profile"><strong>Client Profile:</strong> Energy Industry Training Consultant</div>
+      <div class="client-profile"><span class="bold-label">Client Profile:</span> Energy Industry Training Consultant</div>
       
-      <p><strong>Core Impact:</strong> Built an automated cloud-linked operational tracker connected to enterprise storage, reducing data latency to zero manual intervention.</p>
+      <p><span class="bold-label">Core Impact:</span> Built an automated cloud-linked operational tracker connected to enterprise storage, reducing data latency to zero manual intervention.</p>
 
       <div class="media-grid">
         <img src="Testimonials/Richard.png" style="width: 320px;" alt="Richard Testimonial">
@@ -324,19 +318,19 @@
       </div>
 
       <details>
-        <summary>Business Value & Outcomes (Click to expand)</summary>
+        <summary><span class="bold-label">Business Value & Outcomes</span> (Click to expand)</summary>
         <ul>
-          <li><b>Cloud Infrastructure Sync:</b> Architected a live data pipeline tethered directly to the client's cloud repository (SharePoint Document Library) to capture multi-department updates</li>
-          <li><b>Automated Refresh Architecture:</b> Implemented automated data orchestration via scheduled daily gateway refreshes on cloud services, ensuring leadership always accesses real-time operational metrics</li>
-          <li><b>Data Integrity:</b> Engineered robust transformation logic to automatically clean, deduplicate, and validate incoming regional training logs before visual rendering</li>
+          <li><span class="bullet-title">Cloud Infrastructure Sync:</span> Architected a live data pipeline tethered directly to the client's cloud repository (SharePoint Document Library) to capture multi-department updates</li>
+          <li><span class="bullet-title">Automated Refresh Architecture:</span> Implemented automated data orchestration via scheduled daily gateway refreshes on cloud services, ensuring leadership always accesses real-time operational metrics</li>
+          <li><span class="bullet-title">Data Integrity:</span> Engineered robust transformation logic to automatically clean, deduplicate, and validate incoming regional training logs before visual rendering</li>
         </ul>
       </details>
 
       <details>
-        <summary>Technical Stack & Competencies (Click to expand)</summary>
+        <summary><span class="bold-label">Technical Stack & Competencies</span> (Click to expand)</summary>
         <ul>
-          <li><b>Data Architecture:</b> Cloud Integration, Scheduled Gateway Orchestration, Automated Data Cleansing</li>
-          <li><b>Business Intelligence:</b> Enterprise Asset Tracking, Role-Based Operational Metrics</li>
+          <li><span class="bullet-title">Data Architecture:</span> Cloud Integration, Scheduled Gateway Orchestration, Automated Data Cleansing</li>
+          <li><span class="bullet-title">Business Intelligence:</span> Enterprise Asset Tracking, Role-Based Operational Metrics</li>
         </ul>
       </details>
     </div>
