@@ -1,14 +1,17 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>ZarTush Data Consulting</title>
+
   <!-- Google Fonts Link for Poppins integration -->
+
   <link rel="preconnect" href="https://googleapis.com">
   <link rel="preconnect" href="https://gstatic.com" crossorigin>
   <link href="https://googleapis.com/css2?family=Poppins:wght@400;500;800;900&display=swap" rel="stylesheet">
-  
+
   <style>
     body {
       font-family: 'Poppins', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
@@ -17,28 +20,32 @@
       line-height: 1.6;
       margin: 0;
       padding: 0;
-      font-weight: 400 !important;
+      font-weight: 400;
     }
 
-    /* Default all content to normal weight; bolding is opt-in below. */
+    /* Default: everything is normal weight unless explicitly marked bold. */
     .container,
     .container p,
     .container div,
     .container li,
     .container a,
-    .container span {
+    .container span,
+    .container details,
+    .container summary {
       font-weight: 400 !important;
     }
 
+    /* The headline is intentionally bold. */
     .container h1 {
       font-weight: 900 !important;
     }
 
+    /* ONLY approved bold elements. */
     .container .bold-label,
     .container .bullet-title {
       font-weight: 800 !important;
     }
-    
+
     .container {
       max-width: 900px;
       margin: 0 auto;
@@ -81,17 +88,18 @@
         text-align: center;
         gap: 20px;
       }
+
       .hero-text-block {
         text-align: center;
       }
     }
 
-    /* Headings customized with ink-blue styling rules */
+    /* Headline */
     h1 {
       font-family: 'Poppins', -apple-system, BlinkMacSystemFont, sans-serif;
       font-size: 45px;
-      color: #003366; 
-      font-weight: 900;
+      color: #003366;
+      font-weight: 900 !important;
       text-transform: uppercase;
       line-height: 1.15;
       margin: 0 0 15px 0;
@@ -99,10 +107,11 @@
       text-align: center;
     }
 
+    /* Sub-headline is intentionally NOT bold. */
     .subtitle {
       font-family: 'Poppins', -apple-system, BlinkMacSystemFont, sans-serif;
       font-size: 21px;
-      font-weight: 400;
+      font-weight: 400 !important;
       color: #333333;
       line-height: 1.3;
       margin-bottom: 25px;
@@ -110,12 +119,23 @@
     }
 
     @media (max-width: 995px) {
-      h1 { font-size: 40px; }
-      .subtitle { font-size: 18px; }
+      h1 {
+        font-size: 40px;
+      }
+
+      .subtitle {
+        font-size: 18px;
+      }
     }
+
     @media (min-width: 1600px) {
-      h1 { font-size: 66px; }
-      .subtitle { font-size: 28px; }
+      h1 {
+        font-size: 66px;
+      }
+
+      .subtitle {
+        font-size: 28px;
+      }
     }
 
     .note {
@@ -125,7 +145,7 @@
       margin-top: 15px;
       font-weight: 400 !important;
     }
-    
+
     /* Project Cards & Grid Layouts */
     .project-card {
       margin-bottom: 60px;
@@ -140,7 +160,7 @@
     .project-title a {
       font-family: 'Poppins', -apple-system, BlinkMacSystemFont, sans-serif;
       font-size: 1.8rem;
-      font-weight: 400;
+      font-weight: 400 !important;
       color: #000000;
       text-decoration: none;
       letter-spacing: -0.02em;
@@ -183,6 +203,7 @@
       margin-bottom: 12px;
       padding: 15px;
       transition: all 0.2s ease;
+      font-weight: 400 !important;
     }
 
     details[open] {
@@ -206,10 +227,10 @@
     li {
       margin-bottom: 10px;
       color: #222222;
-      font-weight: 400 !important; 
+      font-weight: 400 !important;
     }
 
-    /* Target specific formatting hooks */
+    /* Approved bold formatting only. */
     .bold-label {
       font-weight: 800 !important;
     }
@@ -229,127 +250,219 @@
       margin: 20px 0;
     }
   </style>
+
 </head>
+
 <body>
 
   <div class="container">
 
-    <!-- HERO HEADER SECTION -->
-    <div class="hero-container">
-      
-      <!-- Left Side: Copy Hook Structure -->
-      <div class="hero-text-block">
-        <h1>ARE MANUAL SPREADSHEETS KEEPING YOU FROM SCALING YOUR BUSINESS?</h1>
-        <div class="subtitle">I automate your data pipeline into a simple dashboard so you can focus on the metrics that grow your business.</div>
-        
-        <div class="note">
-          <span class="bold-label">Confidentiality Note:</span> To comply with Non-Disclosure Agreements (NDAs), all sensitive metrics, proprietary business logic, and identifying customer details have been anonymized or modified. The data structures and engineering architecture remain identical to the production environment.
-        </div>
-      </div>
+```
+<!-- HERO HEADER SECTION -->
+<div class="hero-container">
 
-      <!-- Right Side: Circular Hero Asset Alignment -->
-      <div class="hero-image-block">
-        <img src="IMG-5378_Circle.jpg" class="hero-profile-pic" alt="Krish Kabi Profile">
-      </div>
+  <!-- Left Side: Copy Hook Structure -->
+  <div class="hero-text-block">
+    <h1>ARE MANUAL SPREADSHEETS KEEPING YOU FROM SCALING YOUR BUSINESS?</h1>
 
+    <div class="subtitle">
+      I automate your data pipeline into a simple dashboard so you can focus on the metrics that grow your business.
     </div>
 
-    <!-- PROJECT 1 -->
-    <div class="project-card">
-      <div class="project-title">
-        <a href="https://github.com" target="_blank">🛍️ Project 1: Multi-Channel E-Commerce Data Pipeline & Financial Dashboard</a>
-      </div>
-      <div class="client-profile"><span class="bold-label">Client Profile:</span> High-Volume E-Commerce Retailer (TikTok Shop & Shopee)</div>
-      
-      <p><span class="bold-label">Core Impact:</span> Engineered a unified data ingestion pipeline that aggregates fragmented multi-platform order and income streams, eliminating manual reporting overhead.</p>
-
-      <div class="media-grid">
-        <img src="Ecommerce_Dashboard/Ecommerce_Dashboard.png" style="width: 100%; max-width: 750px;" alt="Ecommerce Dashboard">
-      </div>
-
-      <details>
-        <summary><span class="bold-label">Business Value & Outcomes</span> (Click to expand)</summary>
-        <ul>
-          <li><span class="bullet-title">Decoupled File Ingestion:</span> Designed a seamless architecture allowing non-technical operators to feed raw platform export of orders and income reports into a centralized system without breaking schema integrity</li>
-          <li><span class="bullet-title">Unified Financial Modeling:</span> Automated the structural transformation of conflicting data schemas (TikTok vs. Shopee) into a standardized star-schema database model</li>
-          <li><span class="bullet-title">Operational Velocity:</span> Replaced a 6-hour weekly manual consolidation process with an automated view of net margins, settled order volumes, and disbursement %</li>
-        </ul>
-      </details>
-
-      <details>
-        <summary><span class="bold-label">Technical Stack & Competencies</span> (Click to expand)</summary>
-        <ul>
-          <li><span class="bullet-title">Data Engineering:</span> ETL Pipeline Design, Cross-Platform Schema Standardization, Star-Schema Data Modeling</li>
-          <li><span class="bullet-title">Business Intelligence:</span> Advanced DAX, Power Query M-Engine, Operational KPI Dashboards</li>
-        </ul>
-      </details>
+    <div class="note">
+      <span class="bold-label">Confidentiality Note:</span>
+      To comply with Non-Disclosure Agreements (NDAs), all sensitive metrics, proprietary business logic, and identifying customer details have been anonymized or modified. The data structures and engineering architecture remain identical to the production environment.
     </div>
+  </div>
 
-    <!-- PROJECT 2 -->
-    <div class="project-card">
-      <div class="project-title">
-        <a href="https://github.com" target="_blank">📧 Project 2: Marketing Analytics Pipeline & Performance Dashboard</a>
-      </div>
-      <div class="client-profile"><span class="bold-label">Client Profile:</span> B2B Marketing Firm</div>
-      
-      <p><span class="bold-label">Core Impact:</span> Structured a marketing dataset into a clean performance engine, decreasing executive reporting latency by 50%.</p>
+  <!-- Right Side: Circular Hero Asset Alignment -->
+  <div class="hero-image-block">
+    <img src="IMG-5378_Circle.jpg" class="hero-profile-pic" alt="Krish Kabi Profile">
+  </div>
 
-      <div class="media-grid">
-        <img src="Testimonials/Raushida.png" style="width: 250px;" alt="Raushida Testimonial">
-        <img src="Email_Marketing_Campaign_Dashboard/email_marketing_dashboard.png" style="width: 450px;" alt="Email Marketing Dashboard">
-      </div>
+</div>
 
-      <details>
-        <summary><span class="bold-label">Business Value & Outcomes</span> (Click to expand)</summary>
-        <ul>
-          <li><span class="bullet-title">Process Optimization:</span> Eliminated weekly manual reporting cycles by engineering an automated KPI calculation framework</li>
-          <li><span class="bullet-title">Revenue Leakage Isolation:</span> Identified a critical 28.65% campaign delivery failure rate, instantly surfacing optimization targets to maximize client acquisition ROI</li>
-        </ul>
-      </details>
+<!-- PROJECT 1 -->
+<div class="project-card">
+  <div class="project-title">
+    <a href="https://github.com" target="_blank">🛍️ Project 1: Multi-Channel E-Commerce Data Pipeline & Financial Dashboard</a>
+  </div>
 
-      <details>
-        <summary><span class="bold-label">Technical Stack & Competencies</span> (Click to expand)</summary>
-        <ul>
-          <li><span class="bullet-title">Analytics & Visualization:</span> High-Density Executive Dashboards, Cohort Analysis, Performance Bottleneck Identification</li>
-        </ul>
-      </details>
-    </div>
+  <div class="client-profile">
+    <span class="bold-label">Client Profile:</span>
+    High-Volume E-Commerce Retailer (TikTok Shop & Shopee)
+  </div>
 
-    <!-- PROJECT 3 -->
-    <div class="project-card">
-      <div class="project-title">
-        <a href="https://github.com" target="_blank">⚙️ Project 3: Enterprise Training Operations Pipeline & Automated Refresh Architecture</a>
-      </div>
-      <div class="client-profile"><span class="bold-label">Client Profile:</span> Energy Industry Training Consultant</div>
-      
-      <p><span class="bold-label">Core Impact:</span> Built an automated cloud-linked operational tracker connected to enterprise storage, reducing data latency to zero manual intervention.</p>
+  <p>
+    <span class="bold-label">Core Impact:</span>
+    Engineered a unified data ingestion pipeline that aggregates fragmented multi-platform order and income streams, eliminating manual reporting overhead.
+  </p>
 
-      <div class="media-grid">
-        <img src="Testimonials/Richard.png" style="width: 320px;" alt="Richard Testimonial">
-      </div>
+  <div class="media-grid">
+    <img src="Ecommerce_Dashboard/Ecommerce_Dashboard.png" style="width: 100%; max-width: 750px;" alt="Ecommerce Dashboard">
+  </div>
 
-      <div class="confidential-tag">
-        🔒 Dashboard Highly Confidential — Not Available for External Viewing
-      </div>
+  <details>
+    <summary>
+      <span class="bold-label">Business Value & Outcomes</span> (Click to expand)
+    </summary>
 
-      <details>
-        <summary><span class="bold-label">Business Value & Outcomes</span> (Click to expand)</summary>
-        <ul>
-          <li><span class="bullet-title">Cloud Infrastructure Sync:</span> Architected a live data pipeline tethered directly to the client's cloud repository (SharePoint Document Library) to capture multi-department updates</li>
-          <li><span class="bullet-title">Automated Refresh Architecture:</span> Implemented automated data orchestration via scheduled daily gateway refreshes on cloud services, ensuring leadership always accesses real-time operational metrics</li>
-          <li><span class="bullet-title">Data Integrity:</span> Engineered robust transformation logic to automatically clean, deduplicate, and validate incoming regional training logs before visual rendering</li>
-        </ul>
-      </details>
+    <ul>
+      <li>
+        <span class="bullet-title">Decoupled File Ingestion:</span>
+        Designed a seamless architecture allowing non-technical operators to feed raw platform export of orders and income reports into a centralized system without breaking schema integrity
+      </li>
 
-      <details>
-        <summary><span class="bold-label">Technical Stack & Competencies</span> (Click to expand)</summary>
-        <ul>
-          <li><span class="bullet-title">Data Architecture:</span> Cloud Integration, Scheduled Gateway Orchestration, Automated Data Cleansing</li>
-          <li><span class="bullet-title">Business Intelligence:</span> Enterprise Asset Tracking, Role-Based Operational Metrics</li>
-        </ul>
-      </details>
-    </div>
+      <li>
+        <span class="bullet-title">Unified Financial Modeling:</span>
+        Automated the structural transformation of conflicting data schemas (TikTok vs. Shopee) into a standardized star-schema database model
+      </li>
 
+      <li>
+        <span class="bullet-title">Operational Velocity:</span>
+        Replaced a 6-hour weekly manual consolidation process with an automated view of net margins, settled order volumes, and disbursement %
+      </li>
+    </ul>
+  </details>
+
+  <details>
+    <summary>
+      <span class="bold-label">Technical Stack & Competencies</span> (Click to expand)
+    </summary>
+
+    <ul>
+      <li>
+        <span class="bullet-title">Data Engineering:</span>
+        ETL Pipeline Design, Cross-Platform Schema Standardization, Star-Schema Data Modeling
+      </li>
+
+      <li>
+        <span class="bullet-title">Business Intelligence:</span>
+        Advanced DAX, Power Query M-Engine, Operational KPI Dashboards
+      </li>
+    </ul>
+  </details>
+</div>
+
+<!-- PROJECT 2 -->
+<div class="project-card">
+  <div class="project-title">
+    <a href="https://github.com" target="_blank">📧 Project 2: Marketing Analytics Pipeline & Performance Dashboard</a>
+  </div>
+
+  <div class="client-profile">
+    <span class="bold-label">Client Profile:</span>
+    B2B Marketing Firm
+  </div>
+
+  <p>
+    <span class="bold-label">Core Impact:</span>
+    Structured a marketing dataset into a clean performance engine, decreasing executive reporting latency by 50%.
+  </p>
+
+  <div class="media-grid">
+    <img src="Testimonials/Raushida.png" style="width: 250px;" alt="Raushida Testimonial">
+    <img src="Email_Marketing_Campaign_Dashboard/email_marketing_dashboard.png" style="width: 450px;" alt="Email Marketing Dashboard">
+  </div>
+
+  <details>
+    <summary>
+      <span class="bold-label">Business Value & Outcomes</span> (Click to expand)
+    </summary>
+
+    <ul>
+      <li>
+        <span class="bullet-title">Process Optimization:</span>
+        Eliminated weekly manual reporting cycles by engineering an automated KPI calculation framework
+      </li>
+
+      <li>
+        <span class="bullet-title">Revenue Leakage Isolation:</span>
+        Identified a critical 28.65% campaign delivery failure rate, instantly surfacing optimization targets to maximize client acquisition ROI
+      </li>
+    </ul>
+  </details>
+
+  <details>
+    <summary>
+      <span class="bold-label">Technical Stack & Competencies</span> (Click to expand)
+    </summary>
+
+    <ul>
+      <li>
+        <span class="bullet-title">Analytics & Visualization:</span>
+        High-Density Executive Dashboards, Cohort Analysis, Performance Bottleneck Identification
+      </li>
+    </ul>
+  </details>
+</div>
+
+<!-- PROJECT 3 -->
+<div class="project-card">
+  <div class="project-title">
+    <a href="https://github.com" target="_blank">⚙️ Project 3: Enterprise Training Operations Pipeline & Automated Refresh Architecture</a>
+  </div>
+
+  <div class="client-profile">
+    <span class="bold-label">Client Profile:</span>
+    Energy Industry Training Consultant
+  </div>
+
+  <p>
+    <span class="bold-label">Core Impact:</span>
+    Built an automated cloud-linked operational tracker connected to enterprise storage, reducing data latency to zero manual intervention.
+  </p>
+
+  <div class="media-grid">
+    <img src="Testimonials/Richard.png" style="width: 320px;" alt="Richard Testimonial">
+  </div>
+
+  <div class="confidential-tag">
+    🔒 Dashboard Highly Confidential — Not Available for External Viewing
+  </div>
+
+  <details>
+    <summary>
+      <span class="bold-label">Business Value & Outcomes</span> (Click to expand)
+    </summary>
+
+    <ul>
+      <li>
+        <span class="bullet-title">Cloud Infrastructure Sync:</span>
+        Architected a live data pipeline tethered directly to the client's cloud repository (SharePoint Document Library) to capture multi-department updates
+      </li>
+
+      <li>
+        <span class="bullet-title">Automated Refresh Architecture:</span>
+        Implemented automated data orchestration via scheduled daily gateway refreshes on cloud services, ensuring leadership always accesses real-time operational metrics
+      </li>
+
+      <li>
+        <span class="bullet-title">Data Integrity:</span>
+        Engineered robust transformation logic to automatically clean, deduplicate, and validate incoming regional training logs before visual rendering
+      </li>
+    </ul>
+  </details>
+
+  <details>
+    <summary>
+      <span class="bold-label">Technical Stack & Competencies</span> (Click to expand)
+    </summary>
+
+    <ul>
+      <li>
+        <span class="bullet-title">Data Architecture:</span>
+        Cloud Integration, Scheduled Gateway Orchestration, Automated Data Cleansing
+      </li>
+
+      <li>
+        <span class="bullet-title">Business Intelligence:</span>
+        Enterprise Asset Tracking, Role-Based Operational Metrics
+      </li>
+    </ul>
+  </details>
+</div>
+```
 
   </div>
 
