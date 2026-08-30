@@ -17,7 +17,26 @@
       line-height: 1.6;
       margin: 0;
       padding: 0;
-      font-weight: 400 !important; /* Force unbolded body state */
+      font-weight: 400 !important;
+    }
+
+    /* Default all content to normal weight; bolding is opt-in below. */
+    .container,
+    .container p,
+    .container div,
+    .container li,
+    .container a,
+    .container span {
+      font-weight: 400 !important;
+    }
+
+    .container h1 {
+      font-weight: 900 !important;
+    }
+
+    .container .bold-label,
+    .container .bullet-title {
+      font-weight: 800 !important;
     }
     
     .container {
@@ -172,15 +191,11 @@
     }
 
     summary {
-      font-weight: 400;
+      font-weight: 400 !important;
       font-size: 1.05rem;
       cursor: pointer;
       outline: none;
       user-select: none;
-    }
-
-    summary::first-line {
-      font-weight: 800;
     }
 
     ul {
@@ -210,7 +225,7 @@
       padding: 15px;
       text-align: center;
       border-radius: 6px;
-      font-weight: 800;
+      font-weight: 400 !important;
       margin: 20px 0;
     }
   </style>
