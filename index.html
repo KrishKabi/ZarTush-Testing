@@ -6,7 +6,7 @@
   <title>ZarTush Data Consulting</title>
   <!-- Google Fonts Link for Poppins integration -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://googleapis.com" rel="stylesheet">
   
   <style>
@@ -17,6 +17,7 @@
       line-height: 1.6;
       margin: 0;
       padding: 0;
+      font-weight: 400; /* Forces baseline unbolded state across body copy */
     }
     
     .container {
@@ -107,6 +108,12 @@
       font-size: 1.1rem;
       color: #333333;
       border-radius: 4px;
+      font-weight: 400;
+    }
+
+    /* Unbolding standard summary sentence copy */
+    .executive-summary strong:first-child {
+      font-weight: 800; /* Keeps just the "Executive Summary:" label bold */
     }
 
     .note {
@@ -114,6 +121,11 @@
       color: #666666;
       font-style: italic;
       margin-top: 15px;
+      font-weight: 400;
+    }
+    
+    .note strong {
+      font-weight: 800; /* Keeps just the "Confidentiality Note:" label bold */
     }
 
     /* Project Cards & Grid Layouts */
@@ -121,6 +133,16 @@
       margin-bottom: 60px;
       padding-bottom: 40px;
       border-bottom: 1px solid #eeeeee;
+    }
+
+    /* Keeps specific paragraph core descriptions unbolded */
+    .project-card p {
+      font-weight: 400;
+    }
+
+    /* Keeps layout tags (like Client Profile) distinctively bold */
+    .project-card p strong {
+      font-weight: 800;
     }
 
     .project-title a {
@@ -141,9 +163,14 @@
       color: #666666;
       margin-top: 5px;
       margin-bottom: 20px;
+      font-weight: 400;
     }
 
-    /* Media Grid: Puts testimonial and showcase side by side like Hormozi's columns */
+    .client-profile strong {
+      font-weight: 800;
+    }
+
+    /* Media Grid */
     .media-grid {
       display: flex;
       gap: 20px;
@@ -160,7 +187,7 @@
       box-shadow: 0 4px 12px rgba(0,0,0,0.05);
     }
 
-    /* Interactive Dropdowns styled cleanly */
+    /* Interactive Dropdowns */
     details {
       background: #ffffff;
       border: 1px solid #e0e0e0;
@@ -176,7 +203,7 @@
     }
 
     summary {
-      font-weight: 700;
+      font-weight: 800; /* Bold dropdown labels */
       font-size: 1.05rem;
       cursor: pointer;
       outline: none;
@@ -188,9 +215,16 @@
       padding-left: 20px;
     }
 
+    /* Explicitly unbolds bulk list descriptions inside dropdown containers */
     li {
       margin-bottom: 10px;
       color: #222222;
+      font-weight: 400; 
+    }
+
+    /* Leaves inner titles (like 'Decoupled File Ingestion') perfectly bold */
+    li b, li strong {
+      font-weight: 800;
     }
 
     .confidential-tag {
@@ -200,12 +234,13 @@
       padding: 15px;
       text-align: center;
       border-radius: 6px;
-      font-weight: 700;
+      font-weight: 800;
       margin: 20px 0;
     }
   </style>
 </head>
 <body>
+
 
   <div class="container">
 
