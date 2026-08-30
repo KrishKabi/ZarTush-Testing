@@ -5,9 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>ZarTush Data Consulting</title>
   <!-- Google Fonts Link for Poppins integration -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://googleapis.com" rel="stylesheet">
+  <link rel="preconnect" href="https://googleapis.com">
+  <link rel="preconnect" href="https://gstatic.com" crossorigin>
+  <link href="https://googleapis.com/css2?family=Poppins:wght@400;500;800;900&display=swap" rel="stylesheet">
   
   <style>
     body {
@@ -17,7 +17,7 @@
       line-height: 1.6;
       margin: 0;
       padding: 0;
-      font-weight: 400; /* Forces baseline unbolded state across body copy */
+      font-weight: 400 !important; /* Force unbolded body state */
     }
     
     .container {
@@ -71,7 +71,7 @@
     h1 {
       font-family: 'Poppins', -apple-system, BlinkMacSystemFont, sans-serif;
       font-size: 45px;
-      color: #003366; /* Exact Ink-Blue hexadecimal color representation */
+      color: #003366; 
       font-weight: 900;
       text-transform: uppercase;
       line-height: 1.15;
@@ -90,7 +90,6 @@
       text-align: center;
     }
 
-    /* Responsive scaling rules matching your requested breakpoints */
     @media (max-width: 995px) {
       h1 { font-size: 40px; }
       .subtitle { font-size: 18px; }
@@ -108,12 +107,7 @@
       font-size: 1.1rem;
       color: #333333;
       border-radius: 4px;
-      font-weight: 400;
-    }
-
-    /* Unbolding standard summary sentence copy */
-    .executive-summary strong:first-child {
-      font-weight: 800; /* Keeps just the "Executive Summary:" label bold */
+      font-weight: 400 !important;
     }
 
     .note {
@@ -121,13 +115,9 @@
       color: #666666;
       font-style: italic;
       margin-top: 15px;
-      font-weight: 400;
+      font-weight: 400 !important;
     }
     
-    .note strong {
-      font-weight: 800; /* Keeps just the "Confidentiality Note:" label bold */
-    }
-
     /* Project Cards & Grid Layouts */
     .project-card {
       margin-bottom: 60px;
@@ -135,14 +125,8 @@
       border-bottom: 1px solid #eeeeee;
     }
 
-    /* Keeps specific paragraph core descriptions unbolded */
     .project-card p {
-      font-weight: 400;
-    }
-
-    /* Keeps layout tags (like Client Profile) distinctively bold */
-    .project-card p strong {
-      font-weight: 800;
+      font-weight: 400 !important;
     }
 
     .project-title a {
@@ -163,11 +147,7 @@
       color: #666666;
       margin-top: 5px;
       margin-bottom: 20px;
-      font-weight: 400;
-    }
-
-    .client-profile strong {
-      font-weight: 800;
+      font-weight: 400 !important;
     }
 
     /* Media Grid */
@@ -203,7 +183,7 @@
     }
 
     summary {
-      font-weight: 800; /* Bold dropdown labels */
+      font-weight: 800; 
       font-size: 1.05rem;
       cursor: pointer;
       outline: none;
@@ -215,16 +195,15 @@
       padding-left: 20px;
     }
 
-    /* Explicitly unbolds bulk list descriptions inside dropdown containers */
     li {
       margin-bottom: 10px;
       color: #222222;
-      font-weight: 400; 
+      font-weight: 400 !important; 
     }
 
-    /* Leaves inner titles (like 'Decoupled File Ingestion') perfectly bold */
-    li b, li strong {
-      font-weight: 800;
+    /* Target specific formatting hooks */
+    strong, b {
+      font-weight: 800 !important;
     }
 
     .confidential-tag {
@@ -241,7 +220,6 @@
 </head>
 <body>
 
-
   <div class="container">
 
     <!-- HERO HEADER SECTION -->
@@ -252,8 +230,11 @@
         <h1>ARE MANUAL SPREADSHEETS KEEPING YOU FROM SCALING YOUR BUSINESS?</h1>
         <div class="subtitle">I automate your data pipeline into a simple dashboard so you can focus on the metrics that grow your business.</div>
         
+        <div class="executive-summary">
+          <strong>Executive Summary:</strong> I engineer automated data architecture and robust ETL pipelines that convert fragmented, multi-channel operational data into high-density executive dashboards. Expert in data transformation logic, semantic modeling, and reducing reporting latency.
+        </div>
         <div class="note">
-          *<strong>Confidentiality Note:</strong> To comply with Non-Disclosure Agreements (NDAs), all sensitive metrics, proprietary business logic, and identifying customer details have been anonymized or modified.
+          <strong>Confidentiality Note:</strong> To comply with Non-Disclosure Agreements (NDAs), all sensitive metrics, proprietary business logic, and identifying customer details have been anonymized or modified. The data structures and engineering architecture remain identical to the production environment.
         </div>
       </div>
 
@@ -264,11 +245,10 @@
 
     </div>
 
-
     <!-- PROJECT 1 -->
     <div class="project-card">
       <div class="project-title">
-        <a href="https://github.com/KrishKabi/ZarTush-Data-Consulting-Pvt-Ltd/blob/main/Ecommerce_Dashboard" target="_blank">🛍️ Project 1: Multi-Channel E-Commerce Data Pipeline & Financial Dashboard</a>
+        <a href="https://github.com" target="_blank">🛍️ Project 1: Multi-Channel E-Commerce Data Pipeline & Financial Dashboard</a>
       </div>
       <div class="client-profile"><strong>Client Profile:</strong> High-Volume E-Commerce Retailer (TikTok Shop & Shopee)</div>
       
@@ -299,7 +279,7 @@
     <!-- PROJECT 2 -->
     <div class="project-card">
       <div class="project-title">
-        <a href="https://github.com/KrishKabi/ZarTush-Data-Consulting-Pvt-Ltd/tree/main/Email_Marketing_Campaign_Dashboard" target="_blank">📧 Project 2: Marketing Analytics Pipeline & Performance Dashboard</a>
+        <a href="https://github.com" target="_blank">📧 Project 2: Marketing Analytics Pipeline & Performance Dashboard</a>
       </div>
       <div class="client-profile"><strong>Client Profile:</strong> B2B Marketing Firm</div>
       
@@ -307,7 +287,7 @@
 
       <div class="media-grid">
         <img src="Testimonials/Raushida.png" style="width: 250px;" alt="Raushida Testimonial">
-        <img src="Email_Marketing_Campaign_Dashboard/email_marketing_dashboard.png" style="width: 600px;" alt="Email Marketing Dashboard">
+        <img src="Email_Marketing_Campaign_Dashboard/email_marketing_dashboard.png" style="width: 450px;" alt="Email Marketing Dashboard">
       </div>
 
       <details>
