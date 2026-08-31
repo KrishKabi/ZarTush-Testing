@@ -262,11 +262,6 @@
       I automate your data pipeline into a simple dashboard so you can focus on the metrics that grow your business.
     </div>
 
-    <div class="note">
-      <span class="bold-label">Confidentiality Note:</span>
-      To comply with Non-Disclosure Agreements (NDAs), all sensitive metrics, proprietary business logic, and identifying customer details have been anonymized or modified. The data structures and engineering architecture remain identical to the production environment.
-    </div>
-
   </div>
 
   <div class="hero-image-block">
@@ -277,136 +272,125 @@
     >
   </div>
 
+</div>
 
-<!-- TESTIMONIALS — FUN COLLAGE -->
+<!-- TESTIMONIALS — HORIZONTAL SCROLL -->
+
 <section class="testimonials-section">
+
   <h2 class="testimonials-heading">What people are saying:</h2>
 
-  <div class="testimonial-collage">
+  <div class="testimonial-scroll">
 
-    <div class="testimonial-card testimonial-1">
-      <img src="Testimonials/Bill Forish.png" alt="Client testimonial">
-    </div>
+```
+<div class="testimonial-slide">
+  <img src="Testimonials/Bill Forish.png" alt="Bill Forish Testimonial">
+</div>
 
-    <div class="testimonial-card testimonial-2">
-      <img src="Testimonials/Jay Nash.png" alt="Client testimonial">
-    </div>
+<div class="testimonial-slide">
+  <img src="Testimonials/Jay Nash.png" alt="Jay Nash Testimonial">
+</div>
 
-    <!-- Add additional testimonials here -->
-    
-    <div class="testimonial-card testimonial-3">
-      <img src="Testimonials/Arsh Gupta.png" alt="Client testimonial">
-    </div>
+<div class="testimonial-slide">
+  <img src="Testimonials/Arsh Gupta.png" alt="Arsh Gupta Testimonial">
+</div>
 
-    <div class="testimonial-card testimonial-4">
-      <img src="Testimonials/Ali Rizvi.png" alt="Client testimonial">
-    </div>
+<div class="testimonial-slide">
+  <img src="Testimonials/Ali Rizvi.png" alt="Ali Rizvi Testimonial">
+</div>
 
-    <div class="testimonial-card testimonial-5">
-      <img src="Testimonials/Zoey Khoo.png" alt="Client testimonial">
-    </div>
-    
+<div class="testimonial-slide">
+  <img src="Testimonials/Zoey Khoo.png" alt="Zoey Khoo Testimonial">
+</div>
+```
 
   </div>
+
 </section>
 
-<style>
-  .testimonials-section {
-    margin-top: 20px;
-    padding-top: 20px;
-  }
+<!-- DIVIDER -->
 
-  .testimonials-heading {
-    margin: 0 0 35px 0;
-    color: #003366;
-    font-size: 2rem;
-    font-weight: 800;
-    text-align: center;
-    letter-spacing: -0.02em;
-  }
+<div class="section-divider"></div>
 
-  .testimonial-collage {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    gap: 35px;
-    padding: 20px 10px 40px;
-  }
+<!-- CONFIDENTIALITY NOTE -->
 
-  .testimonial-card {
-    padding: 10px;
-    background: #ffffff;
-    border: 1px solid #eeeeee;
-    border-radius: 8px;
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.10);
-    transition: transform 0.25s ease, box-shadow 0.25s ease;
-  }
-
-  .testimonial-card img {
-    display: block;
-    width: auto;
-    max-width: 100%;
-    height: auto;
-    border-radius: 4px;
-  }
-
-  .testimonial-card:hover {
-    transform: translateY(-8px) rotate(0deg) !important;
-    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
-  }
-
-  .testimonial-1 {
-    transform: rotate(-3deg);
-  }
-
-  .testimonial-2 {
-    transform: rotate(3deg);
-  }
-
-  .testimonial-3 { transform: rotate(-2deg); }
-  .testimonial-4 { transform: rotate(4deg); }
-  .testimonial-5 { transform: rotate(-4deg); }
-
-  .testimonial-1 img {
-    max-width: 400px;
-  }
-
-  .testimonial-2 img {
-    max-width: 400px;
-  }
-
-  .testimonial-3 img {
-    max-width: 400px;
-  }
-
-  .testimonial-4 img {
-    max-width: 400px;
-  }
-
-  .testimonial-5 img {
-    max-width: 400px;
-  }
-
-  @media (max-width: 768px) {
-    .testimonial-collage {
-      gap: 25px;
-    }
-
-    .testimonial-card {
-      transform: rotate(0deg);
-      width: 100%;
-      max-width: 500px;
-    }
-
-    .testimonial-card img {
-      width: 100%;
-      max-width: none;
-    }
-  }
-</style>
-
+<div class="note">
+  <span class="bold-label">Confidentiality Note:</span>
+  To comply with Non-Disclosure Agreements (NDAs), all sensitive metrics, proprietary business logic, and identifying customer details have been anonymized or modified. The data structures and engineering architecture remain identical to the production environment.
 </div>
+
+
+<style>
+  /* TESTIMONIALS — HORIZONTAL SCROLL */
+
+.testimonials-section {
+margin-top: 0;
+padding-top: 0;
+font-weight: 400;
+}
+
+.testimonials-heading {
+margin: 0 0 30px 0;
+color: #003366;
+font-size: 2rem;
+font-weight: 800;
+text-align: center;
+letter-spacing: -0.02em;
+}
+
+.testimonial-scroll {
+display: flex;
+gap: 25px;
+overflow-x: auto;
+overflow-y: hidden;
+padding: 10px 5px 30px;
+scroll-snap-type: x mandatory;
+scroll-behavior: smooth;
+scrollbar-width: thin;
+}
+
+.testimonial-slide {
+flex: 0 0 auto;
+width: 380px;
+padding: 10px;
+background: #ffffff;
+border: 1px solid #eeeeee;
+border-radius: 8px;
+box-shadow: 0 5px 18px rgba(0, 0, 0, 0.08);
+scroll-snap-align: start;
+}
+
+.testimonial-slide img {
+display: block;
+width: 100%;
+height: auto;
+border-radius: 4px;
+}
+
+.testimonial-slide:hover {
+box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+}
+
+/* Same divider treatment as the hero section */
+.section-divider {
+height: 2px;
+background: #f0f0f0;
+margin: 20px 0 30px 0;
+}
+
+/* Confidentiality note now sits between testimonials and Project 1 */
+.testimonials-section + .section-divider + .note {
+margin-top: 0;
+margin-bottom: 35px;
+}
+
+@media (max-width: 768px) {
+.testimonial-slide {
+width: 85vw;
+}
+}
+
+</style>
     
 <!-- PROJECT 1 -->
 <div class="project-card">
