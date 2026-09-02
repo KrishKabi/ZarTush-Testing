@@ -250,7 +250,7 @@
 
   <div class="container">
 
-```
+
 <!-- HERO HEADER -->
 <div class="hero-container">
 
@@ -282,7 +282,7 @@
 
   <div class="testimonial-scroll">
 
-```
+
 <div class="testimonial-slide">
   <img src="Testimonials/Bill Forish.png" alt="Bill Forish Testimonial">
 </div>
@@ -302,9 +302,12 @@
 <div class="testimonial-slide">
   <img src="Testimonials/Zoey Khoo.png" alt="Zoey Khoo Testimonial">
 </div>
-```
 
   </div>
+
+<div class="testimonial-scroll-hint" aria-hidden="true">
+  →
+</div>
 
 </section>
 
@@ -387,6 +390,38 @@ margin-bottom: 35px;
 @media (max-width: 768px) {
 .testimonial-slide {
 width: 85vw;
+}
+}
+
+/* MOBILE TESTIMONIAL SCROLL HINT */
+.testimonials-section {
+position: relative;
+}
+
+.testimonial-scroll-hint {
+display: none;
+}
+
+@media (max-width: 768px) {
+.testimonial-scroll-hint {
+display: flex;
+position: absolute;
+right: 8px;
+top: 50%;
+transform: translateY(-50%);
+width: 38px;
+height: 38px;
+align-items: center;
+justify-content: center;
+background: rgba(255, 255, 255, 0.9);
+border: 1px solid #dddddd;
+border-radius: 50%;
+box-shadow: 0 3px 10px rgba(0, 0, 0, 0.12);
+color: #003366;
+font-size: 24px;
+font-weight: 400;
+pointer-events: none;
+z-index: 10;
 }
 }
 
@@ -558,7 +593,7 @@ width: 85vw;
   </div>
 
   <div class="confidential-tag">
-    🔒 Dashboard Highly Confidential — Not Available for External Viewing
+    Dashboard Highly Confidential — Not Available for External Viewing
   </div>
 
   <details>
